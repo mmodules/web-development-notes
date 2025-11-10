@@ -1,0 +1,47 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.timetable{
+    width: 100%;
+}
+
+.header div, .times div, .slotsColumn div, .lecture div{
+    border: 1px solid black; 
+}
+
+.header{
+    background-color: darkgrey;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header div{
+    width: 120px;
+    
+}
+
+.times{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: darkgrey;
+    
+    font-weight: bold;
+}
+
+.main-section{
+    display: flex;
+}
+
+.slotsColumn div{
+    width: 120px;
+    height: 51px;
+}
+
+.lecture{
+    background-color:  grey;
+}
