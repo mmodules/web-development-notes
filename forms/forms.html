@@ -4,16 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Forms</h1>
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstName"><br><br>
+    <form 
+        action="mailto:abc@qwerty.com"
+        method="post"
+        enctype="text/plain">
+        <fieldset>
+            <legend>Personal Information</legend>
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastName"><br>
+            <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstName" placeholder="Joe">
+            </div>
+            <div>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastName" placeholder="Borg">
+            </div>
 
+            <div>
+                <p>Age Group</p>
+
+                <input type="radio" name="age" id="age1" value="1">
+                <label for="">14-17</label>
+                <br>
+                <input type="radio" name="age" id="age2" value="2">
+                <label for="">18-21</label>
+                <br>
+                <input type="radio" name="age" id="age3" value="3">
+                <label for="">22-29</label>
+                <br>
+                <input type="radio" name="age" id="age4" value="4">
+                <label for="">30+</label>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Contact Details</legend>
+            
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="joeborg@gmail.com">
+            </div>
+
+            <div>
+                <label for="email">Phone Number</label>
+                <input type="tel" name="phone" id="phone" placeholder="9988 7766" pattern="[0-9]{4} [0-9]{4}">
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" name="offers" id="offers">
+                <label for="offers">Contact me for offers</label>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Message Details</legend>
+
+            <div>
+                <label for="department">Department</label>
+                <select name="department" id="department">
+                    <option value="" disabled selected>Please select a department</option>
+                    <option value="1">Customer Support</option>
+                    <option value="2">Technical Support</option>
+                    <option value="3">Sales</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject of Message">
+            </div>
+            <br>
+            <div>
+                <label for="message">Message</label>
+                <br>
+                <textarea name="message" id="message" placeholder="Enter message here ..." cols="40" rows="20"></textarea>
+            </div>
+        </fieldset>
+        <br>
+        <div>
+            <button type="reset">Cancel</button>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+    
 
 </body>
 </html>
